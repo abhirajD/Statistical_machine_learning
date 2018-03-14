@@ -1,0 +1,54 @@
+    |updatesoftwarepath.m
+        -function updatesoftwarepath;
+    SMLalgorithms/
+        smlutilities/
+            |savefile.m
+                -function savefile(filename,thetext,mode)
+            |recodedata.m
+                -function [newspreadsheet,recodeddata,recodeddatalabels,datatransforms] = recodedata(datafilename,codingplan)
+            |logisticsigmoid.m
+                -function prob = logisticsigmoid(netinput)
+            |readtextfile.m
+                -function textdata = readtextfile(filename)
+            |userinputdataset.m
+                -function thedata = userinputdataset(menutitle,datafileprompt);
+            |resizedisplay.m
+                -function constants = resizedisplay(displaychoice,constants);
+            |userinputconstants.m
+                -function constants = userinputconstants(dialogboxname,constants,vartypes,varprompts);
+            |copyrightinfo.m
+                -function copyrightinfo();
+            |mylog.m
+                -function y = mylog(x)
+            |softplusfunk.m
+                -function y = softplusfunk(x)
+            |splitdata.m
+                -function [traindatasheet,testdatasheet] = splitdata(datafilename,percenttrain)
+        sazwtoolbox/
+            |sazwdisplayprogress.m
+                -function fighandle = sazwdisplayprogress(fighandle, figuretitle, systemstate, constants, performancehistory)
+            |sazwdefaultconstants.m
+                -function constants = sazwdefaultconstants;
+            |checkwolfe.m
+                -function stepsizestatus = checkwolfe(xt,dt,stepsize,constants,thedata)
+            |sazwdescent.m
+                -function [xt,performancehistory] = sazwdescent(thedata,parameters,performancehistory,constants);
+            |computesazwoutputstats.m
+                -function sazout = computesazwoutputstats(xt,constants,thedata)
+            |autosearchdirection.m
+                -function [dt,innercycleid] = autosearchdirection(innercycleid,xt,dtlast,gt,gtlast,hesst,stepsizelast,constants);
+            |updatesazwconstants.m
+                -function constants = updatesazwconstants;
+            |autostepsize.m
+                -function [stepsize,Vbest,iteration] = autostepsize(xt,dt,constants,thedata);
+            |displaysazwresults.m
+                -function displaysazwresults(sazwout);
+    LinearMachine/
+        |gradobjfunction.m
+            -function [gradientvector,gmx] = gradobjfunction(xvector,constants,thedata)
+        |hessobjfunction.m
+            -function hessmx = hessobjfunction(xvector,constants,thedata)
+        |demolinear.m
+            -function demolinear
+        |objfunction.m
+            -function [objfunctionval,predicterrormx,predictedresponses] = objfunction(xvector,constants,thedata)
